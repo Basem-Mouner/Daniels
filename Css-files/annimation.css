@@ -1,0 +1,183 @@
+/* ===========================Lary Daniels=================================== */
+
+@keyframes type-writer {
+    1% {
+        content: " L";
+    }
+    2% {
+        content: " La";
+    }
+    3% {
+        content: " Lar";
+    }
+    4% {
+        content: " Lary";
+    }
+    5% {
+        content: " Lary D";
+    }
+    6% {
+        content: " Lary Da";
+    }
+    7% {
+        content: " Lary Dan";
+    }
+    8% {
+        content: " Lary Dani";
+    }
+    9% {
+        content: " Lary Danie";
+    }
+    10% {
+        content: " Lary Daniel";
+    }
+    11% {
+        content: " Lary Daniels";
+    }
+    25% {
+        content: " Lary Daniels";
+    }
+    26% {
+        content: " Lary Daniel";
+    }
+    27% {
+        content: " Lary Danie";
+    }
+    28% {
+        content: " Lary Dani";
+    }
+    29% {
+        content: " Lary Dan";
+    }
+    30% {
+        content: " Lary Da";
+    }
+    31% {
+        content: " Lary D";
+    }
+    32% {
+        content: " Lary";
+    }
+    33% {
+        content: " Lar";
+    }
+    34% {
+        content: " La";
+    }
+    35% {
+        content: " L";
+    }
+    36% {
+        content: " ";
+    }
+    /* -----------------Developer----------------------------------- */
+    37% {
+        content: " D";
+    }
+    38% {
+        content: " De";
+    }
+    39% {
+        content: " Dev";
+    }
+    40% {
+        content: " Deve";
+    }
+    41% {
+        content: " Devel";
+    }
+    42% {
+        content: " Develo";
+    }
+    43% {
+        content: " Develop";
+    }
+    44% {
+        content: " Develope";
+    }
+    45% {
+        content: " Developer";
+    }
+    61% {
+        content: " Developer";
+    }
+    62% {
+        content: " Develope";
+    }
+    63% {
+        content: " Develop";
+    }
+    64% {
+        content: " Develo";
+    }
+    65% {
+        content: " Devel";
+    }
+    66% {
+        content: " Deve";
+    }
+    67% {
+        content: " Dev";
+    }
+    68% {
+        content: " De";
+    }
+    69% {
+        content: " D";
+    }
+    70% {
+        content: " ";
+    }
+    /* ===================Designer============================ */
+    71% {
+        content: " D";
+    }
+    72% {
+        content: " De";
+    }
+    73% {
+        content: " Des";
+    }
+    74% {
+        content: " Desi";
+    }
+    75% {
+        content: " Desig";
+    }
+    76% {
+        content: " Design";
+    }
+    77% {
+        content: " Designe";
+    }
+    78% {
+        content: " Designer";
+    }
+    93% {
+        content: " Designer";
+    }
+    94% {
+        content: " Designe";
+    }
+    95% {
+        content: " Design";
+    }
+    96% {
+        content: " Desig";
+    }
+    97% {
+        content: " Desi";
+    }
+    98% {
+        content: " Des";
+    }
+    99% {
+        content: " De";
+    }
+    99.5% {
+        content: " D";
+    }
+    100% {
+        content: " ";
+    }
+}

@@ -1,0 +1,576 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@font-face {
+    font-family: body-Font;
+    src: url(../webfonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: header-Font;
+    src: url(../webfonts/Montserrat/static/Montserrat-Black.ttf);
+}
+
+@font-face {
+    font-family: header1-Font;
+    src: url(../webfonts/Montserrat/static/Montserrat-ExtraLight.ttf);
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-site-color: #343434;
+    --main-bg-custom-color: #1c1c1c;
+    /*body-font Poppins */
+    --main-body-font: body-Font;
+    /*header-font Montserrat*/
+    --header-body-font: header-Font;
+    /*header1-h1-font Montserrat*/
+    --header1-body-font: header1-Font;
+    /*main-transition-time*/
+    --main-transition-time: 0.5s;
+}
+
+body {
+    /*body-font Poppins */
+    font-family: var(--main-body-font);
+}
+
+h1 {
+    /*h1-font Montserrat*/
+    font-family: var(--header1-body-font);
+    color: var(--main-site-color);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*header-font Montserrat*/
+    font-family: var(--header-body-font);
+}
+
+html {
+    scroll-padding-top: 50px;
+    scroll-behavior: smooth;
+}
+
+textarea {
+    resize: horizontal;
+    height: 150px;
+    max-width: 100%;
+}
+
+
+/* =======================major classes ======================================= */
+
+.bg-custom {
+    background-color: var(--main-bg-custom-color);
+}
+
+.Wth-Max {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sec-title {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 900;
+    position: relative;
+}
+
+.sec-title::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 25%;
+    height: 2px;
+    border-bottom: 3px dotted rgba(128, 128, 128, 0.216);
+}
+
+.icon-effect>span {
+    color: #ffffff;
+    font-size: 14px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-bg-custom-color);
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-transition: all var(--main-transition-time) ease-in-out;
+    -o-transition: all var(--main-transition-time) ease-in-out;
+    transition: all var(--main-transition-time) ease-in-out;
+    cursor: pointer;
+}
+
+.icon-effect>span:hover {
+    color: var(--main-bg-custom-color);
+    background-color: white;
+}
+
+.large-icon-effect>span {
+    background-color: #eeeeee;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.large-icon-effect:hover span {
+    background-color: #000000;
+    color: white;
+    -webkit-transition: all var(--main-transition-time) ease-in-out;
+    -o-transition: all var(--main-transition-time) ease-in-out;
+    transition: all var(--main-transition-time) ease-in-out;
+}
+
+
+/* ========================================================== */
+
+
+/* ==============================nav Section==================================================== */
+
+.navbar .nav-item .nav-link {
+    color: white;
+    position: relative;
+}
+
+.navbar-brand {
+    color: white;
+    line-height: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-toggler i {
+    color: rgba(255, 255, 255, 0.93);
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    -webkit-transition: all var(--main-transition-time) ease-in-out;
+    -o-transition: all var(--main-transition-time) ease-in-out;
+    transition: all var(--main-transition-time) ease-in-out;
+}
+
+.navbar-scrolled {
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    .navbar-brand {
+        color: rgb(0, 0, 0);
+    }
+    .navbar-toggler i {
+        color: rgba(0, 0, 0, 0.93);
+    }
+    .nav-item .nav-link {
+        color: rgb(0, 0, 0);
+    }
+    .nav-item .nav-link::after {
+        background-color: #000000;
+    }
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+}
+
+
+/* ==============================End Nav Section==================================================== */
+
+
+/* ==============================Header Section==================================================== */
+
+.home {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../assests/images/bg.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assests/images/bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assests/images/bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.home .container {
+    margin-top: 56px;
+}
+
+.home .writer-animate span::after {
+    content: " ";
+    font-weight: 700;
+    -webkit-animation: type-writer 10s infinite ease-in-out;
+    animation: type-writer 10s infinite ease-in-out;
+}
+
+.icon_header span {
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    font-size: .8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* ==============================End Header Section==================================================== */
+
+
+/* =============================about Section==================================================== */
+
+.dots-bg {
+    background-image: url(../assests/images/dots.png);
+    background-repeat: repeat;
+    top: 25%;
+    right: 25%;
+    z-index: 0;
+}
+
+.inner-about-left {
+    background-image: url(../assests/images/dots.png);
+    background-repeat: repeat;
+    z-index: 999;
+}
+
+.inner-about-left img {
+    padding: 0 0 30px 22px;
+}
+
+.inner-about-left::after {
+    content: ' ';
+    width: 20%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+}
+
+.inner-about-left::before {
+    content: ' ';
+    width: 40px;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: -12px;
+    top: 0;
+}
+
+.skills .progress {
+    height: 1.7rem;
+}
+
+.progress h6 {
+    font-family: body-Font;
+    font-size: 0.9rem;
+}
+
+.out-about-right>span {
+    cursor: pointer;
+}
+
+.about .out-about-right .boton1 {
+    color: white;
+}
+
+.about .out-about-right .boton1:hover {
+    color: var(--main-bg-custom-color);
+    background-color: white;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.about .out-about-right .boton2 a {
+    color: rgb(0, 0, 0);
+}
+
+.about .out-about-right .boton2:hover {
+    color: white;
+    background-color: var(--main-bg-custom-color);
+    -webkit-transition: all var(--main-transition-time) ease-in-out;
+    -o-transition: all var(--main-transition-time) ease-in-out;
+    transition: all var(--main-transition-time) ease-in-out;
+}
+
+.about .out-about-right .boton2:hover a {
+    color: white;
+}
+
+
+/* ==============================End About Section==================================================== */
+
+
+/* ===================================services section================================= */
+
+.services .inner-card-item p {
+    font-size: 14px;
+    line-height: 22.4px;
+    word-spacing: 2px;
+}
+
+
+/* ===================================End services section================================= */
+
+
+/* ===================================Work section================================= */
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 23px;
+    color: var(--main-bg-custom-color);
+}
+
+.nav-tabs .nav-link.active span {
+    position: relative;
+    color: var(--main-bg-custom-color);
+    background-color: transparent;
+    /* border-bottom: 2px solid var(--main-bg-custom-color); */
+}
+
+.nav-tabs .nav-link.active span::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    width: 0%;
+    height: 0.19rem;
+    background-color: var(--main-bg-custom-color);
+    -webkit-transition: all var(--main-transition-time) ease-in-out;
+    -o-transition: all var(--main-transition-time) ease-in-out;
+    transition: all var(--main-transition-time) ease-in-out;
+}
+
+.nav-tabs .nav-link.active span::after {
+    width: 100%;
+}
+
+.work .nav-link span {
+    position: relative;
+}
+
+.work .nav-link span::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    width: 0%;
+    height: 0.19rem;
+    background-color: var(--main-bg-custom-color);
+    -webkit-transition: all var(--main-transition-time) ease-in-out;
+    -o-transition: all var(--main-transition-time) ease-in-out;
+    transition: all var(--main-transition-time) ease-in-out;
+}
+
+.work .nav-link:hover span::after {
+    width: 100%;
+}
+
+.inner-work-item .overlay-work-item {
+    top: 5%;
+    height: 95%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    background-color: rgba(255, 255, 255, 0.426);
+    -webkit-transition: top .2s 0s ease-in-out, background-color 0.1s .2s ease-in-out, -webkit-transform 0s 0s ease-in-out;
+    transition: top .2s 0s ease-in-out, background-color 0.1s .2s ease-in-out, -webkit-transform 0s 0s ease-in-out;
+    -o-transition: top .2s 0s ease-in-out, transform 0s 0s ease-in-out, background-color 0.1s .2s ease-in-out;
+    transition: top .2s 0s ease-in-out, transform 0s 0s ease-in-out, background-color 0.1s .2s ease-in-out;
+    transition: top .2s 0s ease-in-out, transform 0s 0s ease-in-out, background-color 0.1s .2s ease-in-out, -webkit-transform 0s 0s ease-in-out;
+}
+
+.inner-work-item:hover .overlay-work-item {
+    top: 0%;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    background-color: rgba(255, 255, 255, 0.914);
+}
+
+.data-contain h6 {
+    -webkit-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px);
+    -webkit-transition: all .3s 0s ease-in-out;
+    -o-transition: all .3s 0s ease-in-out;
+    transition: all .3s 0s ease-in-out;
+}
+
+.inner-work-item:hover .data-contain h6 {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.data-contain .icon-item-data {
+    -webkit-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px);
+    -webkit-transition: all .3s 0s ease-in-out;
+    -o-transition: all .3s 0s ease-in-out;
+    transition: all .3s 0s ease-in-out;
+}
+
+.inner-work-item:hover .data-contain .icon-item-data {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+/* ===================================End Work section================================= */
+
+
+/* ================================= Clients section================================= */
+
+.carousel-indicators [data-bs-target] {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #767272;
+    margin: 8px;
+}
+
+.carousel-item h6 {
+    font-family: var(--header-body-font);
+    margin-top: 20px;
+}
+
+.carousel-item span {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* ===================================End Clients Section================================= */
+
+
+/* ===================================Start Team Section================================= */
+
+.card-team-item .inner-overlay-img-team {
+    background-color: rgba(255, 255, 255, 0.918);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform .5s ease-in-out, -webkit-transform .5s ease-in;
+    transition: -webkit-transform .5s ease-in-out, -webkit-transform .5s ease-in;
+    -o-transition: transform .5s ease-in-out, transform .5s ease-in;
+    transition: transform .5s ease-in-out, transform .5s ease-in;
+    transition: transform .5s ease-in-out, transform .5s ease-in, -webkit-transform .5s ease-in-out, -webkit-transform .5s ease-in;
+}
+
+.footer-card-team {
+    background-color: rgb(91, 91, 91);
+}
+
+.footer-card-team h4 {
+    font-family: var(--header1-body-font);
+    font-weight: 900;
+}
+
+.out-img-team:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all var(--main-transition-time) ease-in-out;
+    -o-transition: all var(--main-transition-time) ease-in-out;
+    transition: all var(--main-transition-time) ease-in-out;
+}
+
+.card-team-item:hover .inner-overlay-img-team {
+    -webkit-transform: scale(1) rotatey(360deg);
+    -ms-transform: scale(1) rotatey(360deg);
+    transform: scale(1) rotatey(360deg);
+}
+
+
+/* ===================================End Team Section================================= */
+
+
+/* ===================================Start contact Section================================= */
+
+.contact form .form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: none;
+    border: none;
+    background-color: #f4f4f4;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.contact form .form-control:focus {
+    /* box-shadow: 0 0 0 2px var(--main-site-color); */
+    /* border-color: var(--main-site-color); */
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: none;
+    border: none;
+}
+
+.contact .btn-form {
+    background-color: var(--main-bg-custom-color);
+    color: white;
+    padding: 6px 35px;
+    text-align: center;
+    -webkit-transition: all var(--main-transition-time) ease-in-out;
+    -o-transition: all var(--main-transition-time) ease-in-out;
+    transition: all var(--main-transition-time) ease-in-out;
+}
+
+.contact .btn-form:hover {
+    background-color: white;
+    color: var(--main-bg-custom-color);
+}
+
+
+/* ===================================End contact Section================================= */
+
+
+/* ===================================Start footer Section================================= */
+
+footer {
+    background-color: var(--main-bg-custom-color);
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* ===================================End footer Section================================= */
